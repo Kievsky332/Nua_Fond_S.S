@@ -116,22 +116,6 @@ h1 {
   line-height: 1.4;
 }
 
-/* Бегущая строка */
-.marquee-container {
-  margin-top: 20px;
-  background-color: #f00;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-marquee {
-  color: #fff;
-  font-family: Arial;
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px;
-  text-shadow: 1px 1px 2px #000;
-}
 nav {
 background-color: #111;
   padding: 15px;
@@ -156,4 +140,33 @@ color: #ff4000;
 .gg{
   margin: 0 50px 0 50px;
   font-size: 40px;
+}
+img{
+  width: 200px; 
+  border-radius: 8px; 
+  border: 2px solid #0f0; 
+  object-fit: cover;
+}
+/* Адаптация для телефонов */
+@media (max-width: 480px) {
+    header{
+      display: none;
+    }
+   .gg{
+    font-size: 20px;
+   }
+   img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+   }
+   pre{
+    max-width: 10%;
+    transform: translate(-100px ,+100px );
+   } 
+   .addres {
+     font-family: 'Courier New', monospace;
+     font-size: 8px;
+     line-height: 1.4;
+}
 }
